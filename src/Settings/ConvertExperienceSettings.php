@@ -16,4 +16,9 @@ class ConvertExperienceSettings extends AppSettings
     {
         return 'Interact with ConvertExperience.';
     }
+
+    public static function group(): string
+    {
+        return 'convert-experience';
+    }
 }
