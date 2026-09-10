@@ -1,0 +1,61 @@
+{
+    "name": "astrogoat/convert-experience",
+    "description": "A ConvertExperience app for Stratum",
+    "keywords": [
+        "astrogoat",
+        "laravel",
+        "convert-experience"
+    ],
+    "homepage": "https://github.com/astrogoat/convert-experience",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Megan",
+            "email": "megan.miller@smoldev.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "astrogoat/strata": "^0.7.0|^0.8.0|^0.9.0|^0.10.0|^0.11.0",
+        "spatie/laravel-package-tools": "^1.4.3",
+        "illuminate/contracts": "^8.37 || ^v9.9|^10.0|^11.0"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^5.3|^7.0|^8.0",
+        "orchestra/testbench": "^6.15|^8.5",
+        "pestphp/pest": "^1.18|^2.16|^3.0",
+        "pestphp/pest-plugin-laravel": "^1.1|^2.2|^3.0",
+        "vimeo/psalm": "^4.8|^5.15"
+    },
+    "autoload": {
+        "psr-4": {
+            "Astrogoat\\ConvertExperience\\": "src",
+            "Astrogoat\\ConvertExperience\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Astrogoat\\ConvertExperience\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/pest --no-coverage",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Astrogoat\\ConvertExperience\\ConvertExperienceServiceProvider"
+            ],
+            "aliases": {
+                "ConvertExperience": "Astrogoat\\ConvertExperience\\ConvertExperienceFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
