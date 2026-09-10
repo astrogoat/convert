@@ -1,6 +1,6 @@
 <?php
 
-namespace Astrogoat\ConvertExperience\Database\Factories;
+namespace Astrogoat\Convert\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

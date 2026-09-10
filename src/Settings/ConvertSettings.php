@@ -1,10 +1,10 @@
 <?php
 
-namespace Astrogoat\ConvertExperience\Settings;
+namespace Astrogoat\Convert\Settings;
 
 use Helix\Lego\Settings\AppSettings;
 
-class ConvertExperienceSettings extends AppSettings
+class ConvertSettings extends AppSettings
 {
     public string $url;
 
@@ -14,11 +14,11 @@ class ConvertExperienceSettings extends AppSettings
 
     public function description(): string
     {
-        return 'Interact with ConvertExperience.';
+        return 'Interact with Convert.';
     }
 
     public static function group(): string
     {
-        return 'convert-experience';
+        return 'convert';
     }
 }

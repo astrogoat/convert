@@ -1,8 +1,8 @@
 <?php
 
-namespace Astrogoat\ConvertExperience\Tests;
+namespace Astrogoat\Convert\Tests;
 
-use Astrogoat\ConvertExperience\ConvertExperienceServiceProvider;
+use Astrogoat\Convert\ConvertServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -13,14 +13,14 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Astrogoat\\ConvertExperience\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Astrogoat\\Convert\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            ConvertExperienceServiceProvider::class,
+            ConvertServiceProvider::class,
         ];
     }
 
@@ -29,7 +29,7 @@ class TestCase extends Orchestra
         config()->set('database.default', 'testing');
 
         /*
-        $migration = include __DIR__.'/../database/migrations/create_convert_experience_table.php.stub';
+        $migration = include __DIR__.'/../database/migrations/create_convert_table.php.stub';
         $migration->up();
         */
     }

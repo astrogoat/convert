@@ -1,12 +1,12 @@
 {
-    "name": "astrogoat/convert-experience",
-    "description": "A ConvertExperience app for Stratum",
+    "name": "astrogoat/convert",
+    "description": "A Convert app for Stratum",
     "keywords": [
         "astrogoat",
         "laravel",
-        "convert-experience"
+        "convert"
     ],
-    "homepage": "https://github.com/astrogoat/convert-experience",
+    "homepage": "https://github.com/astrogoat/convert",
     "license": "MIT",
     "authors": [
         {
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Astrogoat\\ConvertExperience\\": "src",
-            "Astrogoat\\ConvertExperience\\Database\\Factories\\": "database/factories"
+            "Astrogoat\\Convert\\": "src",
+            "Astrogoat\\Convert\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Astrogoat\\ConvertExperience\\Tests\\": "tests"
+            "Astrogoat\\Convert\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -49,10 +49,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Astrogoat\\ConvertExperience\\ConvertExperienceServiceProvider"
+                "Astrogoat\\Convert\\ConvertServiceProvider"
             ],
             "aliases": {
-                "ConvertExperience": "Astrogoat\\ConvertExperience\\ConvertExperienceFacade"
+                "Convert": "Astrogoat\\Convert\\ConvertFacade"
             }
         }
     },

@@ -1,7 +1,7 @@
 {
-  "name": "convert-experience",
+  "name": "convert",
   "version": "1.17.0",
-  "description": "[![Latest Version on Packagist](https://img.shields.io/packagist/v/astrogoat/convert-experience.svg?style=flat-square)](https://packagist.org/packages/astrogoat/convert-experience) [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/astrogoat/convert-experience/run-tests?label=tests)](https://github.com/astrogoat/convert-experience/actions?query=workflow%3Arun-tests+branch%3Amain) [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/astrogoat/convert-experience/Check%20&%20fix%20styling?label=code%20style)](https://github.com/astrogoat/convert-experience/actions?query=workflow%3A\"Check+%26+fix+styling\"+branch%3Amain) [![Total Downloads](https://img.shields.io/packagist/dt/astrogoat/convert-experience.svg?style=flat-square)](https://packagist.org/packages/astrogoat/convert-experience)",
+  "description": "[![Latest Version on Packagist](https://img.shields.io/packagist/v/astrogoat/convert.svg?style=flat-square)](https://packagist.org/packages/astrogoat/convert) [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/astrogoat/convert/run-tests?label=tests)](https://github.com/astrogoat/convert/actions?query=workflow%3Arun-tests+branch%3Amain) [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/astrogoat/convert/Check%20&%20fix%20styling?label=code%20style)](https://github.com/astrogoat/convert/actions?query=workflow%3A\"Check+%26+fix+styling\"+branch%3Amain) [![Total Downloads](https://img.shields.io/packagist/dt/astrogoat/convert.svg?style=flat-square)](https://packagist.org/packages/astrogoat/convert)",
   "directories": {
     "test": "tests"
   },
@@ -14,16 +14,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/astrogoat/convert-experience.git"
+    "url": "git+https://github.com/astrogoat/convert.git"
   },
   "keywords": [
     "strata",
-    "convert-experience"
+    "convert"
   ],
   "author": "Laura Tonning",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/astrogoat/convert-experience/issues"
+    "url": "https://github.com/astrogoat/convert/issues"
   },
-  "homepage": "https://github.com/astrogoat/convert-experience#readme"
+  "homepage": "https://github.com/astrogoat/convert#readme"
 }

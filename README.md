@@ -1,16 +1,16 @@
-# A ConvertExperience app for Strata
+# A Convert app for Strata
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/astrogoat/convert-experience.svg?style=flat-square)](https://packagist.org/packages/astrogoat/convert-experience)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/astrogoat/convert-experience/run-tests?label=tests)](https://github.com/astrogoat/convert-experience/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/astrogoat/convert-experience/Check%20&%20fix%20styling?label=code%20style)](https://github.com/astrogoat/convert-experience/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/astrogoat/convert-experience.svg?style=flat-square)](https://packagist.org/packages/astrogoat/convert-experience)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/astrogoat/convert.svg?style=flat-square)](https://packagist.org/packages/astrogoat/convert)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/astrogoat/convert/run-tests?label=tests)](https://github.com/astrogoat/convert/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/astrogoat/convert/Check%20&%20fix%20styling?label=code%20style)](https://github.com/astrogoat/convert/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/astrogoat/convert.svg?style=flat-square)](https://packagist.org/packages/astrogoat/convert)
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require astrogoat/convert-experience
+composer require astrogoat/convert
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ composer require astrogoat/convert-experience
 Include it in you Blade file.
 
 ```php
-@include('convert-experience::script')
+@include('convert::script')
 ```
 
 ## Testing

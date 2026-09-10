@@ -1,10 +1,10 @@
 @php
-    use Astrogoat\ConvertExperience\Settings\ConvertExperienceSettings;
-    $settings = resolve(ConvertExperienceSettings::class);
+    use Astrogoat\Convert\Settings\ConvertSettings;
+    $settings = resolve(ConvertSettings::class);
 @endphp
 
 @if($settings->enabled)
-<!-- begin Convert Experiences code-->
+<!-- begin Convert code-->
     <script type="text/javascript" src="{{ $settings->url }}"></script>
-<!-- end Convert Experiences code -->
+<!-- end Convert code -->
 @endif

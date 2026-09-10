@@ -1,5 +1,5 @@
 <?php
 
-use Astrogoat\ConvertExperience\Tests\TestCase;
+use Astrogoat\Convert\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

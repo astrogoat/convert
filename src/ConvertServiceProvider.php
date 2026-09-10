@@ -1,25 +1,25 @@
 <?php
 
-namespace Astrogoat\ConvertExperience;
+namespace Astrogoat\Convert;
 
-use Astrogoat\ConvertExperience\Settings\ConvertExperienceSettings;
+use Astrogoat\Convert\Settings\ConvertSettings;
 use Helix\Lego\Apps\App;
 use Helix\Lego\Apps\Services\IncludeFrontendViews;
 use Helix\Lego\LegoManager;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class ConvertExperienceServiceProvider extends PackageServiceProvider
+class ConvertServiceProvider extends PackageServiceProvider
 {
     public function registerApp(App $app)
     {
         return $app
-            ->name('convert-experience')
-            ->settings(ConvertExperienceSettings::class)
+            ->name('convert')
+            ->settings(ConvertSettings::class)
             ->migrations([
                 __DIR__ . '/../database/migrations/settings',
             ])->includeFrontendViews(function (IncludeFrontendViews $views) {
-                return $views->addToEnd(['convert-experience::script']);
+                return $views->addToEnd(['convert::script']);
             });
     }
 
@@ -32,6 +32,6 @@ class ConvertExperienceServiceProvider extends PackageServiceProvider
 
     public function configurePackage(Package $package): void
     {
-        $package->name('convert-experience')->hasViews()->hasConfigFile();
+        $package->name('convert')->hasViews()->hasConfigFile();
     }
 }
