@@ -7,7 +7,7 @@ class CreateConvertExperienceSettings extends SettingsMigration
     public function up(): void
     {
         $this->migrator->add('convert-experience.enabled', false);
-        $this->migrator->add('convert-experience.url', 'https://acsbapp.com/apps/app/dist/js/app.js');
+        $this->migrator->add('convert-experience.url', '');
     }
 
     public function down()
