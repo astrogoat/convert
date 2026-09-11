@@ -19,7 +19,7 @@ class ConvertServiceProvider extends PackageServiceProvider
             ->migrations([
                 __DIR__ . '/../database/migrations/settings',
             ])->includeFrontendViews(function (IncludeFrontendViews $views) {
-                return $views->addToEnd(['convert::script']);
+                return $views->addToHead(['convert::script'],101);
             });
     }
 
